@@ -6,14 +6,14 @@ const nodemailer = require('nodemailer');
 
 const app = express();
 
-// View engine setup
+
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
-// Static folder
+
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
-// Body Parser Middleware
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -35,14 +35,14 @@ app.post('/send', (req, res) => {
     <p>${req.body.message}</p>
   `;
 
-  // create reusable transporter object using the default SMTP transport
+  //  reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     port: 587,
     secure: false,
     auth: {
-        user: 'sujjjan11@gmail.com', // generated ethereal user
-        pass: 'Muskan@123'  // generated ethereal password
+        user: 'yourmail@gmail.com', // generated ethereal user
+        pass: 'password'  // generated ethereal password
     },
     tls:{
       rejectUnauthorized:false
@@ -52,7 +52,7 @@ app.post('/send', (req, res) => {
   // setup email data with unicode symbols
   let mailOptions = {
       from: '"Nodemailer Contact" <test@gmail.com>', // sender address
-      to: ['zoranhaude@gmail.com','sumanchhetri1010@gmail.com'],// list of receivers
+      to: ['assface@gmail.com','assface2@gmail.com'],// list of receivers
       subject: 'Node Contact Request', // Subject line
       text: 'Hello there! Test message</h1>', // plain text body
       html: output
