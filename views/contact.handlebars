@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NodeMailer</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+  <div class="container">
+      <h1><span>Mailer</span></h1>
+      <hr>
+        <h3>Email Here:</h3>
+        {{msg}}
+        <hr>
+        <form method="POST" action="send" align="center">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter name">
+             <label for="company">Company:</label>
+            <input type="text" id="company" placeholder="Enter company" name="company">
+           <br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="Enter email" name="email">
+          <label for="number">Phone Number:</label>
+             <input type="text" id="number" placeholder="Enter number" name="phone">
+            <br>
+        <label>Message</label>
+        <br>
+            <textarea name="message" rows="5"></textarea>
+            <br>
+         <button type="submit" class="btn btn-outline-dark">Submit</button>
+        </form>
+</div>
+</body>
+</html>

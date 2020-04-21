@@ -1,0 +1,17 @@
+{
+  "name": "NodeMailer",
+  "version": "1.0.0",
+  "description": "app using nodemailer",
+  "author": "Sujan Chhetri",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "nodemailer": "^4.1.0",
+    "nodemon": "^2.0.3"
+  }
+}
