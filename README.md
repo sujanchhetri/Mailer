@@ -7,7 +7,7 @@ Simple Node.js/Express app using Nodemailer to send emails from a form
 * express-handlebars 
 * nodemailer
 * nodemon
-`npm install`
+* `npm install` to install dependencies
 
 
 ## Steps to use
