@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "app using nodemailer",
   "author": "Sujan Chhetri",
-  "main": "app.js",
+  "main": "mail.js",
   "scripts": {
-    "start": "nodemon app"
+    "start": "nodemon mail"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
